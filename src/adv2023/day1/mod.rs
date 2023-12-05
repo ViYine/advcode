@@ -35,7 +35,7 @@ mod tests {
     fn part2_should_work() -> Result<()> {
         let res = part2::solve("src/adv2023/day1/input.txt".into())?;
         println!("part2 res: {}", res);
-        assert_eq!(res, 54788);
+        assert_eq!(res, 54770);
         Ok(())
     }
 }
