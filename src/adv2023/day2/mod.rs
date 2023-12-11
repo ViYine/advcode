@@ -18,4 +18,12 @@ mod tests {
         assert_eq!(res, 8);
         Ok(())
     }
+
+    #[test]
+    fn day2_part1_should_work() -> Result<()> {
+        let res = part1::solve("src/adv2023/day2/input.txt".into())?;
+        println!("part1 res: {}", res);
+        assert_eq!(res, 1853);
+        Ok(())
+    }
 }
