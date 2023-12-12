@@ -98,7 +98,7 @@ mod tests {
 
     #[test]
     fn day2_part1_test_should_work() -> Result<()> {
-        let res = part1::solve("src/adv2023/day2/test1.txt".into())?;
+        let res = part1::solve("src/adv2023/day2/test.txt".into())?;
         println!("part1 res: {}", res);
         assert_eq!(res, 8);
         Ok(())
@@ -109,6 +109,22 @@ mod tests {
         let res = part1::solve("src/adv2023/day2/input.txt".into())?;
         println!("part1 res: {}", res);
         assert_eq!(res, 1853);
+        Ok(())
+    }
+
+    #[test]
+    fn day2_part2_test_should_work() -> Result<()> {
+        let res = part2::solve("src/adv2023/day2/test.txt".into())?;
+        println!("part2 res: {}", res);
+        assert_eq!(res, 2286);
+        Ok(())
+    }
+
+    #[test]
+    fn day2_part2_should_work() -> Result<()> {
+        let res = part2::solve("src/adv2023/day2/input.txt".into())?;
+        println!("part2 res: {}", res);
+        assert_eq!(res, 72706);
         Ok(())
     }
 }
